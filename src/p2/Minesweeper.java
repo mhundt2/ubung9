@@ -2,12 +2,15 @@ package p2;
 
 public class Minesweeper {
 
-    public static int[][] grid = new int[3][3];
+    public static int[][] grid = new int[][]{
+            {1, -1, 2},
+            {1, 3, -1},
+            {0, 2, -1}
+    };
+
+
 
     public static void main(String[] args) {
-        grid[0][1] = -1;
-        grid[1][2] = -1;
-        grid[2][2] = -1;
 
         calculateGrid();
         printGrid();
@@ -46,5 +49,3 @@ public class Minesweeper {
         }
     }
 }
-
-
